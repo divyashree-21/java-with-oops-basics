@@ -22,5 +22,23 @@ public class Patterns {
             }
             System.out.println();
         }
+
+         System.out.println("Reverse pattern");
+        for(int i = n;i>=1;i--){ 
+            for(int j = 1;j <= i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i = n;i>=1;i--){ 
+            for(int k = 0;k <= i;k++){
+                System.out.print(" ");
+            }
+            for(int j = 1;j <= i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
 }
 }
