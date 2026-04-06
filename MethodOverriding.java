@@ -5,7 +5,7 @@ class Animal{
     void display(){
         System.out.println("Display method");
     }
-    void sound(int decible){
+    static void sound(int decible){
         System.out.println("Animal sound upto "+decible+"decibles");
     }
 }
@@ -14,12 +14,9 @@ class Cat extends Animal{
         super.move();
         System.out.println("Inside the cat class");
     }
-    void sound(int dec){
+    static void sound(int dec){
         System.out.println("Cat can sound upto 10 decibles");
     }
-}
-class Dog extends Animal{
-
 }
 public class MethodOverriding {
     public static void main(String[] args) {
@@ -27,7 +24,6 @@ public class MethodOverriding {
         Animal obj = new Cat();
         obj.move();
         obj.sound(10);
-        obj = new Dog();
     }
     
 }
